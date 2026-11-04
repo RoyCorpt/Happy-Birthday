@@ -1,0 +1,219 @@
+<!DOCTYPE html>
+<html lang="id">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1, viewport-fit=cover">
+<title>Selamat Ulang Tahun, Nabila</title>
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Bodoni+Moda:ital,wght@0,400;0,600;1,400;1,600&family=Jost:wght@300;400;500&display=swap" rel="stylesheet">
+<style>
+:root{--bg:#f8f1f5;--bg2:#ecdcea;--ink:#2a1636;--mut:#6b5478;--card:rgba(255,255,255,.62);--line:rgba(42,22,54,.2);--gold:#8f6218;--g1:#a8741f;--g2:#d9a94d;--g3:#8f6218;--on:#fff;--rose:#b4476b;--spark:#c0892b;
+box-sizing:border-box;padding-top:env(safe-area-inset-top,0px);padding-bottom:env(safe-area-inset-bottom,0px);color-scheme:light}
+@media (prefers-color-scheme:dark){:root:not([data-theme="light"]){--bg:#1a0e29;--bg2:#2e1746;--ink:#faf0f4;--mut:#cfb9d9;--card:rgba(255,255,255,.06);--line:rgba(233,201,138,.32);--gold:#e9c98a;--g1:#f5dca4;--g2:#e0b765;--g3:#b98a3c;--on:#2a1636;--rose:#f0a9c0;--spark:#e9c98a;color-scheme:dark}}
+:root[data-theme="dark"]{--bg:#1a0e29;--bg2:#2e1746;--ink:#faf0f4;--mut:#cfb9d9;--card:rgba(255,255,255,.06);--line:rgba(233,201,138,.32);--gold:#e9c98a;--g1:#f5dca4;--g2:#e0b765;--g3:#b98a3c;--on:#2a1636;--rose:#f0a9c0;--spark:#e9c98a;color-scheme:dark}
+html{scroll-padding-top:env(safe-area-inset-top,0px);scroll-behavior:smooth;background:var(--bg)}
+*,*::before,*::after{box-sizing:inherit}
+body{margin:0;font-family:'Jost','Helvetica Neue',Arial,sans-serif;font-weight:300;font-size:1.06rem;line-height:1.75;color:var(--ink);background:radial-gradient(ellipse at 50% -10%,var(--bg2),transparent 60%),radial-gradient(ellipse at 100% 70%,var(--bg2),transparent 50%),var(--bg);overflow:hidden}
+h1,h2,h3,.serif{font-family:'Bodoni Moda','Didot','Bodoni 72',Georgia,serif;font-weight:400;margin:0}
+#cv{position:fixed;inset:0;width:100%;height:100%;pointer-events:none;z-index:30}
+section{position:fixed;inset:0;max-width:980px;margin:0 auto;padding:36px 22px 120px;display:flex;flex-direction:column;align-items:center;text-align:center;overflow-y:auto;z-index:2;opacity:0;visibility:hidden;transform:translateY(14px);transition:opacity .6s,transform .6s,visibility 0s .6s}
+section.on{opacity:1;visibility:visible;transform:none;transition:opacity .6s .1s,transform .6s .1s,visibility 0s}
+section::before,section::after{content:"";flex:1 0 0}
+.three,.doas,.letter{width:100%}
+h2{font-style:italic;font-size:clamp(2rem,6vw,3.3rem);line-height:1.15;margin-bottom:14px}
+.sub{color:var(--mut);max-width:46ch;margin:0 auto 28px}
+.btn{font:400 1rem 'Jost',sans-serif;letter-spacing:.05em;color:var(--ink);background:transparent;border:1px solid var(--gold);border-radius:999px;padding:14px 36px;cursor:pointer;transition:background .3s,color .3s,transform .2s}
+.btn:hover{background:var(--gold);color:var(--on);transform:translateY(-2px)}
+.btn.fill{background:linear-gradient(135deg,var(--g1),var(--g3));color:var(--on);border-color:transparent;font-weight:500}
+.btn:focus-visible,.doa:focus-visible{outline:2px solid var(--rose);outline-offset:4px}
+.hero{padding-top:20px}
+.rv{opacity:0;transform:translateY(16px);animation:in 1.1s cubic-bezier(.2,.7,.2,1) forwards;animation-delay:calc(var(--i)*.28s)}
+@keyframes in{to{opacity:1;transform:none}}
+.pre{font-size:1.1rem;color:var(--mut);letter-spacing:.06em;margin:0}
+.num{font-family:'Bodoni Moda','Didot',Georgia,serif;font-style:italic;font-weight:600;font-size:clamp(9rem,38vw,19rem);line-height:.9;margin:.05em 0 0;background:linear-gradient(100deg,var(--g1),var(--g2),var(--g3),var(--g2),var(--g1));background-size:250% 100%;-webkit-background-clip:text;background-clip:text;color:transparent;animation:in 1.1s cubic-bezier(.2,.7,.2,1) forwards,sh 7s linear 1.2s infinite;filter:drop-shadow(0 14px 34px rgba(224,183,101,.28))}
+@keyframes sh{to{background-position:-250% 0}}
+h1{display:flex;flex-direction:column;align-items:center;margin-top:-.2em}
+h1 .f{font-style:italic;font-size:clamp(3rem,13vw,6.2rem);line-height:1.05}
+h1 .l{font-size:clamp(1.05rem,3.6vw,1.6rem);letter-spacing:.22em;color:var(--gold);margin-top:6px}
+.hero .btn{margin-top:38px}
+.hint{font-size:.92rem;color:var(--mut);margin:18px 0 0}
+
+.quote p.serif{font-style:italic;font-size:clamp(1.6rem,4.8vw,2.7rem);line-height:1.3;max-width:20ch;margin:0 auto 18px}
+.quote small{display:block;color:var(--mut);font-size:1rem}
+.three{display:grid;grid-template-columns:repeat(auto-fit,minmax(230px,1fr));text-align:center}
+.q{padding:10px 28px}
+.q+.q{border-left:1px solid var(--line)}
+.q .g{color:var(--gold);font-size:1.4rem}
+.q h3{font-style:italic;font-size:2rem;margin:6px 0 8px}
+.q p{margin:0;color:var(--mut)}
+@media (max-width:700px){.q+.q{border-left:0;border-top:1px solid var(--line);margin-top:12px;padding-top:16px}.q{padding:6px 10px}.q .g{display:none}.q h3{font-size:1.6rem;margin:2px 0 4px}.q p{font-size:.95rem;line-height:1.55}}
+.cake{width:min(310px,80vw,38svh);display:block;margin:0 auto 8px;overflow:visible}
+.s{fill:none;stroke:var(--gold);stroke-width:2;stroke-linecap:round;stroke-linejoin:round}
+.t{fill:var(--card);stroke:var(--gold);stroke-width:2}
+.pl{fill:var(--gold);opacity:.8}
+.fl{transform-box:fill-box;transform-origin:center bottom;animation:fk .4s ease-in-out infinite alternate;transition:opacity .5s,transform .5s}
+@keyframes fk{to{transform:scale(1.1,.92) rotate(3deg)}}
+.out .fl{opacity:0;transform:scale(.2);animation:none}
+.sm{fill:none;stroke:var(--mut);stroke-width:2;stroke-linecap:round;opacity:0}
+.out .sm{animation:sm 2s ease-out}
+@keyframes sm{from{opacity:.7;transform:translateY(0)}to{opacity:0;transform:translateY(-26px)}}
+#wish{font-style:italic;font-size:clamp(1.3rem,4vw,1.8rem);color:var(--rose);margin:24px 0 0;min-height:2.6em;opacity:0;transition:opacity 1s}
+#wish.on{opacity:1}
+.doas{display:grid;grid-template-columns:repeat(auto-fit,minmax(240px,1fr));gap:22px}
+.doa{font:inherit;color:inherit;background:var(--card);border:1px solid var(--line);border-radius:22px;min-height:220px;padding:28px;display:grid;place-items:center;cursor:pointer;backdrop-filter:blur(8px);-webkit-backdrop-filter:blur(8px);transition:border-color .4s,transform .3s}
+.doa:hover{transform:translateY(-4px);border-color:var(--gold)}
+.seal{display:grid;place-items:center;gap:12px;color:var(--mut);font-size:.95rem}
+.seal i{font-style:normal;display:grid;place-items:center;width:62px;height:62px;border-radius:50%;border:1px solid var(--gold);color:var(--gold);font-size:1.5rem}
+.doa.open{cursor:default;border-color:var(--gold);transform:none}
+.doa.open p{margin:0;font-family:'Bodoni Moda',Georgia,serif;font-style:italic;font-size:1.3rem;line-height:1.5;animation:in 1s forwards;opacity:0}
+.letter{max-width:600px;margin:0 auto;text-align:left;background:var(--card);border:1px solid var(--line);border-radius:6px;padding:clamp(28px,6vw,56px);backdrop-filter:blur(8px);-webkit-backdrop-filter:blur(8px)}
+.letter p{margin:0 0 16px}
+.letter .first{font-family:'Bodoni Moda',Georgia,serif;font-style:italic;font-size:1.6rem}
+.letter .sig{font-family:'Bodoni Moda',Georgia,serif;font-style:italic;color:var(--rose);font-size:1.4rem;text-align:right;margin:26px 0 0}
+footer{text-align:center;color:var(--mut);padding:0 20px calc(70px);font-size:.95rem;position:relative;z-index:2}
+#nav{position:fixed;left:0;right:0;bottom:0;z-index:40;display:flex;align-items:center;justify-content:center;gap:14px;padding:16px 16px calc(16px + env(safe-area-inset-bottom,0px));background:linear-gradient(to top,var(--bg) 55%,transparent)}
+#nav .btn{padding:12px 24px}
+#dots{display:flex;gap:7px}
+#dots span{width:7px;height:7px;border-radius:50%;background:var(--line);transition:all .3s}
+#dots span.on{width:22px;border-radius:4px;background:var(--gold)}
+@media (max-width:700px){.doas{gap:12px}.doa{min-height:110px;padding:16px}.seal{gap:8px}.seal i{width:44px;height:44px;font-size:1.1rem}.doa.open p{font-size:1.1rem}.letter{padding:22px}.letter p{font-size:.96rem;line-height:1.6;margin-bottom:12px}.letter .first{font-size:1.4rem}}
+@media (prefers-reduced-motion:reduce){*{animation:none!important;scroll-behavior:auto!important}.rv,.doa.open p{opacity:1!important;transform:none!important}.num{color:var(--gold);-webkit-text-fill-color:currentColor;background:none}}
+</style>
+</head>
+<body>
+<canvas id="cv" aria-hidden="true"></canvas>
+
+<section class="hero">
+  <p class="pre rv" style="--i:0">Selamat ulang tahun yang ke-20</p>
+  <div class="num" style="animation-delay:.3s,1.5s" aria-label="Dua puluh">20</div>
+  <h1 class="rv" style="--i:3"><span class="f">Nabila</span><span class="l">Syafiqoh Panjaitan</span></h1>
+  <button class="btn fill rv" style="--i:4" id="start">Buka kejutannya</button>
+  <p class="hint rv" style="--i:5">Ketuk di mana saja untuk menaburkan kilau, dan ketuk “Lanjut” untuk halaman berikutnya.</p>
+</section>
+
+<section class="quote">
+  <p class="serif">Dua puluh tahun, dan semuanya baru saja dimulai.</p>
+  <small>7.305 hari telah kamu lewati, dan setiap harinya membuat dunia sedikit lebih terang.</small>
+</section>
+
+<section>
+  <h2>Tentang kamu</h2>
+  <p class="sub">Tiga hal yang membuat orang-orang senang berada di dekatmu.</p>
+  <div class="three">
+    <div class="q"><div class="g">✦</div><h3>Ceria</h3><p>Senyum dan tawamu membuat suasana apa pun terasa hangat, seperti membawa cahaya ke setiap ruangan.</p></div>
+    <div class="q"><div class="g">✦</div><h3>Cerdas</h3><p>Pikiranmu tajam dan rasa ingin tahumu besar. Teruslah belajar, karena kamu akan melangkah jauh.</p></div>
+    <div class="q"><div class="g">✦</div><h3>Baik hati</h3><p>Kebaikanmu tulus dan tidak dibuat-buat. Itu salah satu hal paling berharga yang kamu miliki.</p></div>
+  </div>
+</section>
+
+<section id="cakeSec">
+  <h2>Satu permintaan</h2>
+  <p class="sub">Pejamkan mata, ucapkan dalam hati, lalu tiup lilinnya.</p>
+  <div id="cakeWrap">
+  <svg class="cake" viewBox="0 0 300 290" role="img" aria-label="Kue ulang tahun dengan dua lilin">
+    <ellipse class="s" cx="150" cy="262" rx="132" ry="14"/>
+    <rect class="t" x="44" y="196" width="212" height="58" rx="10"/>
+    <rect class="t" x="72" y="142" width="156" height="55" rx="10"/>
+    <rect class="t" x="102" y="96" width="96" height="47" rx="10"/>
+    <path class="s" d="M44 214q13 16 26 0t26 0 26 0 26 0 26 0 26 0 26 0 26 0"/>
+    <path class="s" d="M72 158q13 14 26 0t26 0 26 0 26 0 26 0 26 0"/>
+    <path class="s" d="M102 110q12 12 24 0t24 0 24 0 24 0"/>
+    <circle class="pl" cx="80" cy="240" r="3.5"/><circle class="pl" cx="115" cy="240" r="3.5"/><circle class="pl" cx="150" cy="240" r="3.5"/><circle class="pl" cx="185" cy="240" r="3.5"/><circle class="pl" cx="220" cy="240" r="3.5"/>
+    <path class="s" d="M130 96V66M170 96V66" stroke-width="6"/>
+    <path class="fl" d="M130 62c-9-10-1-18 0-27 10 9 9 17 0 27z" fill="#f5dca4" stroke="#e0b765" stroke-width="2"/>
+    <path class="fl" style="animation-delay:.15s" d="M170 62c-9-10-1-18 0-27 10 9 9 17 0 27z" fill="#f5dca4" stroke="#e0b765" stroke-width="2"/>
+    <path class="sm" d="M130 56q-7-9 0-18M170 56q-7-9 0-18"/>
+  </svg>
+  </div>
+  <button class="btn" id="blow">Tiup lilin</button>
+  <p id="wish" aria-live="polite">Semoga semua permintaanmu terkabul, Nabila.</p>
+</section>
+
+<section>
+  <h2>Tiga doa untukmu</h2>
+  <p class="sub">Ketuk untuk membuka masing-masing.</p>
+  <div class="doas" id="doas"></div>
+</section>
+
+<section>
+  <h2>Sebuah pesan</h2>
+  <p class="sub">Dibaca pelan-pelan, ya.</p>
+  <div class="letter">
+    <p class="first">Nabila,</p>
+    <p>Selamat 20 tahun. Terima kasih sudah menjadi pribadi yang ceria, cerdas, dan baik. Orang-orang di sekitarmu beruntung, karena kehadiranmu selalu membawa tawa dan rasa nyaman.</p>
+    <p>Semoga di usia yang baru ini kamu selalu sehat, bahagia, dan percaya pada dirimu sendiri. Kamu pantas mendapatkan semua hal indah yang sedang kamu perjuangkan.</p>
+    <p>Semoga bab dua puluhan ini menjadi bab terbaikmu.</p>
+    <p class="sig">Dengan sepenuh hati</p>
+  </div>
+  <p style="margin:24px 0 0"><button class="btn" id="again">Taburkan kilau sekali lagi</button></p>
+  <p class="hint">3 November 2026, untuk Nabila Syafiqoh Panjaitan</p>
+</section>
+
+<nav id="nav"><button class="btn" id="prev">Kembali</button><div id="dots" aria-hidden="true"></div><button class="btn fill" id="next">Lanjut</button></nav>
+
+<script>
+(function(){
+var $=function(s){return document.querySelector(s)};
+var cv=$('#cv'),cx=cv.getContext('2d'),W,H,P=[],A=[],sp='#e9c98a',fr=0;
+var COL=['#e9c98a','#d9a94d','#f5dca4','#f3c6d3','#f0a9c0','#ffffff','#c9758f'];
+function rs(){W=cv.width=innerWidth;H=cv.height=innerHeight}
+addEventListener('resize',rs);rs();
+function col(){var v=getComputedStyle(document.documentElement).getPropertyValue('--spark').trim();if(v)sp=v}
+col();setInterval(col,2000);
+for(var i=0;i<42;i++)A.push({x:Math.random()*W,y:Math.random()*H,r:.8+Math.random()*2,v:.15+Math.random()*.4,ph:Math.random()*6.28});
+function burst(x,y,n){n=n||70;for(var i=0;i<n;i++){var a=Math.random()*6.283,s=3+Math.random()*8;P.push({x:x,y:y,vx:Math.cos(a)*s,vy:Math.sin(a)*s-5,w:5+Math.random()*6,h:3+Math.random()*5,o:i%3===0,r:Math.random()*6,vr:(Math.random()-.5)*.35,c:COL[i%COL.length],l:140+Math.random()*90})}}
+function rain(){for(var i=0;i<110;i++)P.push({x:Math.random()*W,y:-20-Math.random()*H*.6,vx:(Math.random()-.5)*1.8,vy:1.4+Math.random()*2.2,w:5+Math.random()*6,h:3+Math.random()*5,o:i%3===0,r:Math.random()*6,vr:(Math.random()-.5)*.25,c:COL[i%COL.length],l:520,g:1})}
+function loop(){fr++;cx.clearRect(0,0,W,H);
+cx.fillStyle=sp;
+A.forEach(function(a){a.y-=a.v;if(a.y<-6){a.y=H+6;a.x=Math.random()*W}cx.globalAlpha=.15+.5*Math.abs(Math.sin(fr*.02+a.ph));cx.beginPath();cx.arc(a.x,a.y,a.r,0,6.283);cx.fill()});
+for(var i=P.length-1;i>=0;i--){var p=P[i];p.vy+=p.g?.02:.14;p.vx*=.992;p.x+=p.vx;p.y+=p.vy;p.r+=p.vr;p.l--;
+if(p.l<=0||p.y>H+30){P.splice(i,1);continue}
+cx.save();cx.translate(p.x,p.y);cx.rotate(p.r);cx.fillStyle=p.c;cx.globalAlpha=Math.min(1,p.l/40);
+if(p.o){cx.beginPath();cx.arc(0,0,p.w/2.4,0,6.283);cx.fill()}else cx.fillRect(-p.w/2,-p.h/2,p.w,p.h);cx.restore()}
+cx.globalAlpha=1;requestAnimationFrame(loop)}
+loop();
+function party(){burst(W*.2,H*.55);burst(W*.5,H*.4,100);burst(W*.8,H*.55);setTimeout(rain,300)}
+
+/* kilau saat diketuk */
+document.addEventListener('pointerdown',function(e){burst(e.clientX,e.clientY,16)});
+
+/* nada lembut */
+var AC;
+function tune(){try{AC=AC||new (window.AudioContext||window.webkitAudioContext)();
+var N=[[392,.5],[392,.25],[440,1],[392,1],[523,1],[494,2],[392,.5],[392,.25],[440,1],[392,1],[587,1],[523,2],[392,.5],[392,.25],[784,1],[659,1],[523,1],[494,1],[440,1.5],[698,.5],[698,.25],[659,1],[523,1],[587,1],[523,2]];
+var t0=AC.currentTime+.05;N.forEach(function(n){var o=AC.createOscillator(),g=AC.createGain();o.type='sine';o.frequency.value=n[0];
+o.connect(g);g.connect(AC.destination);var d=n[1]*.5;g.gain.setValueAtTime(.0001,t0);g.gain.exponentialRampToValueAtTime(.16,t0+.04);g.gain.exponentialRampToValueAtTime(.0001,t0+d+.25);o.start(t0);o.stop(t0+d+.3);t0+=d})}catch(e){}}
+
+var pg=[].slice.call(document.querySelectorAll('section')),cur=0,dt=$('#dots');
+pg.forEach(function(){dt.appendChild(document.createElement('span'))});
+function go(n){n=Math.max(0,Math.min(pg.length-1,n));pg.forEach(function(s,i){s.classList.toggle('on',i===n)});pg[n].scrollTop=0;cur=n;
+[].forEach.call(dt.children,function(d,i){d.className=i===n?'on':''});
+$('#prev').style.visibility=n?'visible':'hidden';
+$('#next').textContent=n===pg.length-1?'Ke awal':'Lanjut';
+if(n===pg.length-1)setTimeout(party,600)}
+$('#next').onclick=function(){go(cur===pg.length-1?0:cur+1)};
+$('#prev').onclick=function(){go(cur-1)};
+addEventListener('keydown',function(e){if(e.key==='ArrowRight')$('#next').click();if(e.key==='ArrowLeft')$('#prev').click()});
+$('#start').onclick=function(){party();setTimeout(function(){go(1)},1300)};
+go(0);
+$('#again').onclick=party;
+var out=false;
+$('#blow').onclick=function(){out=!out;$('#cakeWrap').classList.toggle('out',out);$('#wish').classList.toggle('on',out);
+this.textContent=out?'Nyalakan lagi':'Tiup lilin';
+if(out){var r=$('#cakeWrap').getBoundingClientRect();burst(r.left+r.width/2,r.top+40,110);party();tune()}};
+
+var D=['Semoga setiap mimpimu dimudahkan jalannya, dan satu per satu menjadi nyata.',
+'Semoga kamu selalu dikelilingi orang-orang yang tulus menyayangimu.',
+'Semoga usia 20 menjadi bab paling indah: banyak tawa, banyak pelajaran, banyak bahagia.'];
+var dw=$('#doas');
+D.forEach(function(txt){var b=document.createElement('button');b.type='button';b.className='doa';
+b.innerHTML='<span class="seal"><i>✦</i>Ketuk untuk membuka</span>';
+b.onclick=function(){if(b.classList.contains('open'))return;b.classList.add('open');b.innerHTML='<p>“'+txt+'”</p>'};
+dw.appendChild(b)});
+
+setTimeout(function(){burst(W/2,H*.38,110)},900);
+})();
+</script>
+</body>
+</html>
